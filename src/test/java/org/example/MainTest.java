@@ -1,0 +1,14 @@
+package org.example;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class MainTest {
+
+    @Test
+    void reverseString() {
+    }
+
+    @Test
+    void sortArray() {
+    }
+}
