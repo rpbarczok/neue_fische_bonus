@@ -9,49 +9,6 @@ public class Main {
         }
     }
 
-    public static String reverseString(String str){
-        StringBuilder strReverse = new StringBuilder(str);
-        return strReverse.reverse().toString();
-    }
-
-    public static int[] sortArray (int[] array) {
-        int[] sortedArray = array.clone();
-        int j=0;
-        while (j < array.length-2) {
-            j = 0;
-            for (int i = 0; i < array.length - 1; i++) {
-                if  (array[i] > array[i + 1]) {
-                    sortedArray[i] = array[i + 1];
-                    sortedArray[i + 1] = array[i];
-                } else {
-                    System.out.println();
-                    j++;
-                }
-            }
-            array=sortedArray.clone();
-        }
-        return sortedArray;
-    }
-
-    public static String[] stringToArray (String str) {
-        return str.split(",");
-    }
-
-    public static int quersumme (int number) {
-        if  (number > 0) {
-            number = Math.abs(number);
-        }
-        if (number < 10) {
-            return number;
-        }
-        String numberString = String.valueOf(number);
-        String[] numberStringArray =  numberString.split("");
-        int sum = 0;
-        for (String str : numberStringArray) {
-            sum = sum + Integer.parseInt(str);
-        }
-        return sum;
-    }
 
     public static String romanNumber (int number) {
         if (number > 100 || number < 1) {
